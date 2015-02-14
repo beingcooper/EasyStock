@@ -3,7 +3,9 @@ import urllib2
 import time
 import msg    #Importing from msg.py
 
-page=urllib2.urlopen("http://bnb.ieeedtu.com/getallnews.php")
+url = raw_input("Enter the url:")
+
+page=urllib2.urlopen("url")
 # Replace the ablove link with the page you want to get updates from
 
 soup=BeautifulSoup(page)
@@ -27,7 +29,7 @@ for item in soup.ul.find_all('li'):
     first=first+1
 
 while first > 0:        # Infinite loop
-    page=urllib2.urlopen("http://bnb.ieeedtu.com/getallnews.php")
+    page=urllib2.urlopen("url")
     soup=BeautifulSoup(page)
 
     # print(soup.ul.li.get_text()+"   ") For testing purpose
