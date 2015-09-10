@@ -5,6 +5,7 @@ A script to help all those who play online bidding games. It sends you mobile SM
 
 ## How to Run? 
 Download both the python files.
+
 1. news_alert.py
 2. msg.py
 
